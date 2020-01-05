@@ -40,8 +40,13 @@ paso 8
 git log
 revisar el historial de cambios
 
-realizar modificaciones al archivo inicial “adsi.txt”
+paso 9
+realizar modificaciones al archivo inicial “adsi.txt” y volver a hacer todo de nuevo desde paso 3 o 4.
 
+Nota: Se recomienda hacer este mismo ejercicio 10 veces seguidas.
+      Dejando en comentarios el numero de la versión y una frase describiendo el cambio, junto con un chiste.
+      
+      
 
 
 
