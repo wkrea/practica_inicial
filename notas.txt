@@ -1,1 +1,3 @@
- git – version
+git – version
+Para revisar que Git esté instalado.
+se abre una ventana de línea de comandos y se introduce la orden.
