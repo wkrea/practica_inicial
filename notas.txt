@@ -12,7 +12,7 @@ para empezar
 estando ubicado en la carpeta a ser controlada.
 
 paso 2
-crear archivo a trabajar.
+crear archivo “adsi.txt”.
 
 paso 3
 git add "nombre_del_archivo.ext" 
@@ -36,9 +36,11 @@ paso 7
 git log
 revisar el historial de cambios
 
+paso 8
+git log
+revisar el historial de cambios
 
-
-
+realizar modificaciones al archivo inicial “adsi.txt”
 
 
 
