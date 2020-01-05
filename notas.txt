@@ -28,11 +28,13 @@ revisar el estado de los cambios pendientes con el comando
 
 paso 6
 git commit "mensaje"
+git commit "version original"
 Para confirmar los cambios.
 se recomienda volver a revisar el estado (git status)
 
-
-
+paso 7
+git log
+revisar el historial de cambios
 
 
 
