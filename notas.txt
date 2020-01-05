@@ -24,7 +24,7 @@ para añadir todos los archivos al mismo tiempo.
 
 paso 5
 git status
-revisar el estado de los cambios pendientes con el comando
+revisar el estado de los cambios pendientes.
 
 paso 6
 git commit "mensaje"
