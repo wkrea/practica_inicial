@@ -1,19 +1,19 @@
 paso 1
-crear carpeta con el nombre repositorio en el escritorio y entrar a git bash
+crear carpeta con el nombre repositorio en el escritorio y entrar a git bash.
 
 paso 2
 dir
-despliga lista de directorios
+despliga lista de directorios.
 
 paso 3
 cd Desktop (escritorio)
-trabaja en el escritorio
+trabaja en el escritorio.
 
 paso 4
 cd repositorio
-entra en la carpeta donde vas a trabajar
+entra en la carpeta donde vas a trabajar.
 
 paso 5
 git clone https://github.com/OscarGonzalez1987/practica_inicial.git (EJEMPLO)
-participar en un proyecto
+clona este proyecto en tu equipo.
 
