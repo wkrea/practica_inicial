@@ -5,3 +5,12 @@ se abre una ventana de línea de comandos y se introduce la orden.
 
 paso 1
 creará la carpeta en el equipo llamada “git_adsi”
+
+paso 2
+git init
+para empezar
+estando ubicado en la carpeta a ser controlada.
+
+git add "nombre_del_archivo.ext" 
+para añadir archivo a trabajar.
+
