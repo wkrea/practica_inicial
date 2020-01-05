@@ -46,6 +46,7 @@ realizar modificaciones al archivo inicial “adsi.txt” y volver a hacer todo 
 Nota: Se recomienda hacer este mismo ejercicio 10 veces seguidas.
       Dejar en comentarios el número de la versión
       y una frase describiendo el cambio, junto con un chiste.
+      cuando terminen, por favor compatir sus "captures".
       
       
 
