@@ -14,3 +14,11 @@ estando ubicado en la carpeta a ser controlada.
 git add "nombre_del_archivo.ext" 
 para añadir archivo a trabajar.
 
+git add .
+para añadir todos los archivos al mismo tiempo.
+
+
+
+
+
+
