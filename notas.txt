@@ -17,7 +17,8 @@ para añadir archivo a trabajar.
 git add .
 para añadir todos los archivos al mismo tiempo.
 
-
+git status
+revisar el estado de los cambios pendientes con el comando
 
 
 
