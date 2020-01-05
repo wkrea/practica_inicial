@@ -1,3 +1,5 @@
+clone https://github.com/OscarGonzalez1987/practica_inicial.git
+
 git – version
 Para revisar que Git esté instalado.
 se abre una ventana de línea de comandos y se introduce la orden.
