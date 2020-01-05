@@ -20,8 +20,8 @@ para añadir todos los archivos al mismo tiempo.
 git status
 revisar el estado de los cambios pendientes con el comando
 
-git commit commit "mensaje"
-Para confirmar los cambios se usa el comando
+git commit "mensaje"
+Para confirmar los cambios.
 
 
 
