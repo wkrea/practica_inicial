@@ -31,3 +31,18 @@ git commit "mensaje"
 Para confirmar los cambios.
 se recomienda volver a revisar el estado (git status)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
