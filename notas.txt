@@ -28,8 +28,8 @@ git status
 revisar el estado de los cambios pendientes.
 
 paso 6
-git commit "mensaje"
-git commit "version original"
+git commit -m "mensaje"
+git commit -m "version original"
 Para confirmar los cambios.
 se recomienda volver a revisar el estado (git status)
 
