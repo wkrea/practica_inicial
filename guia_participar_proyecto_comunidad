@@ -1,14 +1,19 @@
 paso 1
+crear carpeta.
+
 entrar a git bash
-
-
 
 paso 2
 dir
 despliga lista de directorios
 
-cd Desktop
+paso 3
+cd Desktop (escritorio)
 trabaja en el escritorio
+
+paso 4
+cd carpeta
+entra en la carpeta donde vas a trabajar
 
 git clone https://github.com/OscarGonzalez1987/practica_inicial.git (EJEMPLO)
 participar en un proyecto
