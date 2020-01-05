@@ -11,17 +11,23 @@ git init
 para empezar
 estando ubicado en la carpeta a ser controlada.
 
+paso 2
+crear archivo a trabajar.
+
+paso 3
 git add "nombre_del_archivo.ext" 
 para añadir archivo a trabajar.
 
+paso 4
 git add .
 para añadir todos los archivos al mismo tiempo.
 
+paso 5
 git status
 revisar el estado de los cambios pendientes con el comando
 
+paso 6
 git commit "mensaje"
 Para confirmar los cambios.
-
-
+se recomienda volver a revisar el estado (git status)
 
