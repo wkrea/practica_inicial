@@ -1,4 +1,3 @@
-
         <table>
             <tr>
                 <td>
@@ -8,7 +7,7 @@
                 </td>
                 <td>
                     <a href="https://oscargonzalez1987.github.io/practica_inicial">            
-                        marco de referencia.                        
+                    marco de referencia.                        
                     </a>
                 </td>
             </tr>            
