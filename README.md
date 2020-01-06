@@ -1,3 +1,3 @@
 # practica_inicial
 aprendiendo git - github
-<h1>hola</h1>
+<a href="https://oscargonzalez1987.github.io/practica_inicial"1>aprende git</a>
