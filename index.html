@@ -31,108 +31,121 @@ and open the template in the editor.
             </div>  
         </nav>
         <br/><br/><br/><br/><br/>
-        <center>
-            <a href="https://git-scm.com/">
-                <img src="https://git-scm.com/images/logo@2x.png"/>
+    <center>
+        <a href="https://git-scm.com/">
+            <img src="https://git-scm.com/images/logo@2x.png"/>
             <a/>
-        </center><br/>  
-        <div class="container">
-            <h1>crear nuevo proyecto</h1>
-            <table class="table table-bordered table-striped table-condensed table-dark table-hover table-responsive">
-                <thead>
-                    <tr>
-                        <th style="width: 100px"></th>
-                        <th style="width: 100px">comando</th>
-                        <th style="width: 100px">Para</th>
-                        <th style="width: 100px">qué sucede</th>
-                        <th style="width: 100px">Recomendaciones</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Paso 0</td>
-                        <td>git -- version</td>
-                        <td>Revisar que Git esté instalado.</td>
-                        <td>se abre una ventana de línea de comandos y se introduce la orden.</td>
-                    </tr>
-                    <tr>
+    </center>
+    <br/>  
+    <div class="container">
+        <h1>crear nuevo proyecto</h1>
+        <table class="table table-bordered table-striped table-condensed table-dark table-hover table-responsive">
+            <thead>
+                <tr>
+                    <th style="width: 100px"></th>
+                    <th style="width: 100px">comando</th>
+                    <th style="width: 100px">Para</th>
+                    <th style="width: 100px">qué sucede</th>
+                    <th style="width: 100px">Recomendaciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Paso 0</td>
+                    <td>git -- version</td>
+                    <td>Revisar que Git esté instalado.</td>
+                    <td>se abre una ventana de línea de comandos y se introduce la orden.</td>
+                </tr>
+            </tbody>   
+        </table>       
+        <table class="table table-bordered table-striped table-condensed table-dark table-hover table-responsive">
+            <tr>
+                <td>
+                    <a href="https://github.com/OscarGonzalez1987/practica_inicial/blob/master/LICENSE.md">
+                        Licencia: Creative Commons
+                    </a>
+                </td>
+            </tr>
+        </table>
+        <table class="table table-bordered table-striped table-condensed table-dark table-hover table-responsive">
+            </tbody>
+            <tr>
+                <td>Paso 1</td>
+                <td></td>
+                <td>Crear la carpeta en el equipo llamada “git_adsi”</td>
+            </tr>
+            <tr>
 
-                        <td>Paso 1</td>
-                        <td></td>
-                        <td>Crear la carpeta en el equipo llamada “git_adsi”</td>
-                    </tr>
-                    <tr>
+                <td>Paso 2</td>
+                <td>git init</td>
+                <td>Empezar, estando ubicado en la carpeta a ser controlada.</td>
+            </tr>               
+            <tr>
 
-                        <td>Paso 2</td>
-                        <td>git init</td>
-                        <td>Empezar, estando ubicado en la carpeta a ser controlada.</td>
-                    </tr>               
-                    <tr>
+                <td>Paso 3</td>
+                <td></td>
+                <td>Crear archivo ejemplo “adsi.txt”.</td>
+            </tr>                
+            <tr>
 
-                        <td>Paso 3</td>
-                        <td></td>
-                        <td>Crear archivo ejemplo “adsi.txt”.</td>
-                    </tr>                
-                    <tr>
+                <td>Paso 4</td>
+                <td>git add "nombre_del_archivo.ext"</td>
+                <td>Añadir archivo a zona de trabajo.</td>
+            </tr> 
+            <tr>
 
-                        <td>Paso 4</td>
-                        <td>git add "nombre_del_archivo.ext"</td>
-                        <td>Añadir archivo a zona de trabajo.</td>
-                    </tr> 
-                    <tr>
+                <td></td>
+                <td>git add .</td>
+                <td>Añadir todos los archivos al mismo tiempo.</td>
+            </tr>
+            <tr>
+                <td>Paso 5</td>
+                <td>git status</td>
+                <td>Revisar el estado de los cambios pendientes.</td>
+            </tr>
+            <tr>
+                <td>Paso 6</td>
+                <td>git commit -m "mensaje"</td>
+                <td>Confirmar los cambios.</td>
+                <td></td>
+                <td>Se recomienda volver a revisar el estado (git status)</td>
+            </tr> 
+            <tr>
+                <td></td>
+                <td>git commit -m "version original"</td>
+            </tr>
+            <tr>
 
-                        <td></td>
-                        <td>git add .</td>
-                        <td>Añadir todos los archivos al mismo tiempo.</td>
-                    </tr>
-                    <tr>
-                        <td>Paso 5</td>
-                        <td>git status</td>
-                        <td>Revisar el estado de los cambios pendientes.</td>
-                    </tr>
-                    <tr>
-                        <td>Paso 6</td>
-                        <td>git commit -m "mensaje"</td>
-                        <td>Confirmar los cambios.</td>
-                        <td></td>
-                        <td>Se recomienda volver a revisar el estado (git status)</td>
-                    </tr> 
-                    <tr>
-                        <td></td>
-                        <td>git commit -m "version original"</td>
-                    </tr>
-                    <tr>
-
-                        <td>paso 7</td>
-                        <td>git log</td>
-                        <td>revisar el historial de cambios</td>
-                    </tr>
-                    <tr>
-                        <td>paso 8</td>
-                        <td></td>
-                        <td>realizar modificaciones al archivo inicial “adsi.txt” y volver a hacer el ejercicio desde el paso 3.</td>
-                        <td></td>
-                        <td>
-                            Se recomienda hacer este mismo ejercicio 10 veces seguidas.<br/><br/>
-                            Dejar en comentarios de commit:<br/><br/>
-                            <ul>
-                            <li>El número de la versión de la modificación</li><br/>
-                            <li>y una frase describiendo el cambio, junto con un chiste o noticia de actualidad.</li><br/>
-                            </ul>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <br/><br/><hr/>
-        <center>
-            Óscar González<br/>
-            Whatsapp 322-8858439<br/>
-            oigonzalez83@misena.edu.co<br/>
-            <a href="https://github.com/OscarGonzalez1987/practica_inicial/blob/master/LICENSE.md">
-                Licencia: Creative Commons
-            </a>
-        </center>
-        <br/><br/><br/><br/><br/>
-    </body>
+                <td>paso 7</td>
+                <td>git log</td>
+                <td>revisar el historial de cambios</td>
+            </tr>
+            <tr>
+                <td>paso 8</td>
+                <td></td>
+                <td>realizar modificaciones al archivo inicial “adsi.txt” y volver a hacer el ejercicio desde el paso 3.</td>
+                <td></td>
+                <td>
+                    Se recomienda hacer este mismo ejercicio 10 veces seguidas.<br/><br/>
+                    Dejar en comentarios de commit:<br/><br/>
+                    <ul>
+                        <li>El número de la versión de la modificación</li><br/>
+                        <li>y una frase describiendo el cambio, junto con un chiste o noticia de actualidad.</li><br/>
+                    </ul>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <br/><br/><hr/>
+    <center>
+        Óscar González<br/>
+        Whatsapp 322-8858439<br/>
+        oigonzalez83@misena.edu.co<br/>
+        <a href="https://github.com/OscarGonzalez1987/practica_inicial/blob/master/LICENSE.md">
+            Licencia: Creative Commons
+        </a>
+    </center>
+    <br/><br/><br/><br/><br/>
+</body>
 </html>
