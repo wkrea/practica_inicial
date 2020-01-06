@@ -1,7 +1,7 @@
 # practica_inicial
 
 <a href="https://oscargonzalez1987.github.io/practica_inicial">            
-    <img src="https://git-scm.com/images/logo@2x.png"/>
+    <img src="https://git-scm.com/images/logo@2x.png"/><br/>
     Aprende git
 </a>
 <br/><br/><hr/>
