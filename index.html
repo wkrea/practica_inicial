@@ -6,46 +6,102 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="main.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <table>
-            <tr>
-                <td>
-                    Función
-                </td>
-                <td>
-                    Operación
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    git init
-                </td>
-                <td>
-                    empezar
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    git add
-                </td>
-                <td>
-                    preparar archivos
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    git status
-                </td>
-                <td>
-                    ver estado de archivos
-                </td>
-            </tr>            
-        </table>
-        
+        <div class="container">
+            <h1>crear nuevo proyecto</h1>
+            <table class="table table-bordered table-striped table-condensed table-dark table-hover table-responsive">
+                <thead>
+                    <tr>
+                        <th style="width: 100px"></th>
+                        <th style="width: 100px">comando</th>
+                        <th style="width: 100px">Para</th>
+                        <th style="width: 100px">qué sucede</th>
+                        <th style="width: 100px">Recomendaciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paso 0</td>
+                        <td>git -- version</td>
+                        <td>Revisar que Git esté instalado.</td>
+                        <td>se abre una ventana de línea de comandos y se introduce la orden.</td>
+                    </tr>
+                    <tr>
+
+                        <td>Paso 1</td>
+                        <td></td>
+                        <td>Crear la carpeta en el equipo llamada “git_adsi”</td>
+                    </tr>
+                    <tr>
+
+                        <td>Paso 2</td>
+                        <td>git init</td>
+                        <td>Empezar, estando ubicado en la carpeta a ser controlada.</td>
+                        <td></td>
+                    </tr>               
+                    <tr>
+
+                        <td>Paso 3</td>
+                        <td></td>
+                        <td>Crear archivo ejemplo “adsi.txt”.</td>
+                    </tr>                
+                    <tr>
+
+                        <td>Paso 4</td>
+                        <td>git add "nombre_del_archivo.ext"</td>
+                        <td>Añadir archivo a zona de trabajo.</td>
+                    </tr> 
+                    <tr>
+
+                        <td></td>
+                        <td>git add .</td>
+                        <td>Añadir todos los archivos al mismo tiempo.</td>
+                    </tr>
+                    <tr>
+                        <td>Paso 5</td>
+                        <td>git status</td>
+                        <td>Revisar el estado de los cambios pendientes.</td>
+                    </tr>
+                    <tr>
+                        <td>Paso 6</td>
+                        <td>git commit -m "mensaje"</td>
+                        <td>Confirmar los cambios.</td>
+                        <td>Se recomienda volver a revisar el estado (git status)</td>
+                    </tr> 
+                    <tr>
+                        <td></td>
+                        <td>git commit -m "version original"</td>
+                    </tr>
+                    <tr>
+
+                        <td>paso 7</td>
+                        <td>git log</td>
+                        <td>revisar el historial de cambios</td>
+                    </tr>
+                    <tr>
+                        <td>paso 8</td>
+                        <td></td>
+                        <td>realizar modificaciones al archivo inicial “adsi.txt” y volver a hacer el ejercicio desde el paso 3.</td>
+                        <td></td>
+                        <td>
+                            Se recomienda hacer este mismo ejercicio 10 veces seguidas.<br/><br/>
+                            Dejar en comentarios de commit:<br/><br/>
+                            <ul>
+                            <li>El número de la versión de la modificación</li><br/>
+                            <li>y una frase describiendo el cambio, junto con un chiste o noticia de actualidad.</li><br/>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </body>
 </html>
