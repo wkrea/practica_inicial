@@ -1,8 +1,13 @@
 /* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+The Creative Commons CC0 Public Domain Dedication waives copyright interest in a
+work you've created and dedicates it to the world-wide public domain. Use CC0 to
+opt out of copyright entirely and ensure your work has the widest reach. As with
+the Unlicense and typical software licenses, CC0 disclaims warranties. CC0 is 
+very similar to the Unlicense.
+    Created on : 6/01/2020, 02:59:20 PM
+    Author     : oscar gonzalez
+    Email      : oigonzalez83@misena.edu.co
+*/
 
 $(document).ready(function(){
     $("#a0b").hide();
