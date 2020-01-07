@@ -13,7 +13,7 @@ $(document).ready(function(){
     $("#a0b").hide();
     $("#a1b").hide();
     $("#a2b").hide();
-    
+    $("#a3b").hide();
     $("#a4b").hide();
     $("#a5b").hide();
     $("#a6b").hide();
@@ -46,6 +46,15 @@ $(document).ready(function(){
     });
     $("#a2b").mousedown(function () {
         $("#a2b").hide();
+    });
+});
+
+$(document).ready(function(){
+    $("#a3a").click(function () {
+        $("#a3b").show();
+    });
+    $("#a3b").mousedown(function () {
+        $("#a3b").hide();
     });
 });
 
