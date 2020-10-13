@@ -11,7 +11,8 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li><a href="celular.php">celular</a></li>
-                <li><a href="celularjs.html">celularjs</a></li>
+                <li><a href="celularjs.html">todos</a></li>
+                <li><a href="huawei.html">huawei</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><?php echo "<a href='../modelo/salir.php'><span class='glyphicon glyphicon-log-in'></span> Cerrar sesión </a>" ?></li>
