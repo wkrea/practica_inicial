@@ -401,8 +401,18 @@ function datosdesalida(){
         var tdicono = document.createElement("td");
         var tdboton_texto = document.createElement("td");
 
+        var tabletitulo = document.createElement("table");
+        var trtitulo = document.createElement("tr");
+        var tdtitulo = document.createElement("td");
+
         var imgwhatsapp = document.createElement("IMG");
         var aboton_icono = document.createElement("a");
+
+        tabletitulo.className = "tabletitulo";
+        tdtitulo.className = "boton_texto";
+        tdtitulo.innerText = 'Características';
+
+
 
         tablewhatsapp.className = "boton_telefono";
         tdicono.className = "td_icono";
@@ -410,6 +420,7 @@ function datosdesalida(){
         imgwhatsapp.className = "imgwhatsapp";
         aboton_icono.className = "boton_icono";
 
+        tabletitulo.appendChild(tdtitulo);
 
         tdicono.appendChild(imgwhatsapp);
         tdboton_texto.appendChild(aboton_icono);
@@ -430,7 +441,7 @@ function datosdesalida(){
         div11.style.margin = "10px 50px 10px 0px";        
 
         div12.className = "col-sm-4";
-        table.className = "table table-hover table-bordered table-responsive";
+        table.className = "table table-hover table-responsive";
 
         div100.style.backgroundColor = "red";
         div100h1.style.color = "white";
@@ -549,6 +560,7 @@ function datosdesalida(){
         div10.appendChild(div101);
 
         div11.appendChild(imgcelular);
+        div12.appendChild(tabletitulo);
         div12.appendChild(table);
         div12.appendChild(tablewhatsapp);
         div13.appendChild(imgmodelo);

@@ -46,6 +46,23 @@ a:hover {
     text-align: center;
 }
 
+.tabletitulo{
+    background-color: #fa4e05;
+    border: 0; 
+    box-sizing: border-box;
+    color: white;
+    
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    height: 45px;
+    width: 274px;
+    line-height: 38px;
+    margin-bottom: 12px;
+    padding: 1px 10px;
+    text-align: center;
+}
+
 .boton_texto {
     color: white;
     font-size: 20px;
