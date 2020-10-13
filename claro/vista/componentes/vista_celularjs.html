@@ -395,6 +395,9 @@ function datosdesalida(){
         var imgcelular = document.createElement("IMG");
         var imgmodelo = document.createElement("IMG");      
 
+        var tablemensaje = document.createElement("table");
+        var trmensaje = document.createElement("tr");
+        var tdmensaje = document.createElement("td");
 
         var tablewhatsapp = document.createElement("table");
         var trwhatsapp = document.createElement("tr");
@@ -412,7 +415,10 @@ function datosdesalida(){
         tdtitulo.className = "boton_texto";
         tdtitulo.innerText = 'Características';
 
-
+        tablemensaje.className = "mensaje";
+        /* tdmensaje.className = "boton_texto"; */
+        tdmensaje.className = "";
+        tdmensaje.innerText = 'Para agendar tu cita en oficina Claro, dar click aquí:';
 
         tablewhatsapp.className = "boton_telefono";
         tdicono.className = "td_icono";
@@ -422,11 +428,21 @@ function datosdesalida(){
 
         tabletitulo.appendChild(tdtitulo);
 
+        trmensaje.appendChild(tdmensaje);
+        tablemensaje.appendChild(trmensaje);
+
         tdicono.appendChild(imgwhatsapp);
         tdboton_texto.appendChild(aboton_icono);
         trwhatsapp.appendChild(tdicono);
         trwhatsapp.appendChild(tdboton_texto);
         tablewhatsapp.appendChild(trwhatsapp);
+
+
+
+
+
+
+
 
 
         row.className = "row";
@@ -562,6 +578,7 @@ function datosdesalida(){
         div11.appendChild(imgcelular);
         div12.appendChild(tabletitulo);
         div12.appendChild(table);
+        div12.appendChild(tablemensaje);
         div12.appendChild(tablewhatsapp);
         div13.appendChild(imgmodelo);
 

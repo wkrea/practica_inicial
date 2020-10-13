@@ -63,11 +63,32 @@ a:hover {
     text-align: center;
 }
 
+.mensaje{
+    background-color:#a2d192; /* #9eff78 */
+    border: 0; 
+    box-sizing: border-box;
+    color: black;
+    
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    /*height: 45px;*/
+    /*width: 274px;*/
+    line-height: normal;/*line-height: 38px;*/
+    margin-bottom: 12px;
+    padding: 1px 10px;
+    text-align: left;
+    border-radius: 10px 0px 10px 10px;
+    padding: 10px;
+}
+
+
+
 .boton_texto {
     color: white;
     font-size: 20px;
     padding-top: 2px;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
 
 .boton_icono {
