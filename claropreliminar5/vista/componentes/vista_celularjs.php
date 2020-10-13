@@ -1,5 +1,4 @@
 
-
 <style>
     #img8gb {
         position: absolute;
@@ -61,190 +60,55 @@
 
 
 
-<br><br>
+<br><br><br><br>
 <script>
 var datos = [""];
 function datosdeentrada(){
+<?php
+include_once '../../modelo/conexion.php';
+$conn = conexion();
+ 
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "SELECT * FROM celular";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    $i = 0;
+    while($row = $result->fetch_assoc()) {
+    ?>
 /* inserta los datos en una matriz de javascript */
-        datos[0] = [
-            "1",
-            "Huawei Y6 2019",
-            "$ 469.900",
-            "$ 469.900",
-            "N.E.",
-            "6.09",
-            "13MP",
-            "Secundaria ",
-            "FHD",
-            "32GB ROM",
-            "2GB RAM",
-            "LiPo 3020mA",
-            "Aproximadam",
-            "Android 9.0 (Pie)   EMUI ",
-            "http://catalogo.claro.com.co/home/EquipoDetalle/Huawei-Y6-2019",
-            "../imagenes/HuaweiY62019.jpg",
-            "SARCOkk"
+        datos[<?php echo $i; ?>] = [
+            "<?php echo $row['id_celular']; ?>",
+            "<?php echo $row['celularNombre']; ?>",
+            "<?php echo $row['celularPrecioContado']; ?>",
+            "<?php echo $row['celularPrecioCuotas']; ?>",
+            "<?php echo $row['celularValorCuota']; ?>",
+            "<?php echo $row['celularTamPantalla']; ?>",
+            "<?php echo $row['celularCamaraP']; ?>",
+            "<?php echo $row['celularCamaraS']; ?>",
+            "<?php echo $row['celularVideo']; ?>",
+            "<?php echo $row['celularCapMemoInterna']; ?>",
+            "<?php echo $row['celularCapMemoRAM']; ?>",
+            "<?php echo $row['celularBateria']; ?>",
+            "<?php echo $row['celularTiempoCarga']; ?>",
+            "<?php echo $row['celularSistemaOperativo']; ?>",
+            "<?php echo $row['celularFuente']; ?>",
+            "<?php echo $row['celularImagen']; ?>",
+            "<?php echo $row['celularcasa']; ?>"
         ];
-/* inserta los datos en una matriz de javascript */
-        datos[1] = [
-            "2",
-            "Huawei Y7 2019",
-            "$ 509.900 ",
-            "$ 509.900 ",
-            "N.E.",
-            "6.26",
-            "Dual 13MP 2",
-            "Secundaria ",
-            "FHD",
-            "32GB ROM",
-            "3GB RAM",
-            "LiPo 4000mA",
-            "N.E.",
-            "Android 8.0 (Oreo)   EMUI",
-            "http://catalogo.claro.com.co/home/EquipoDetalle/Huawei-Y7-2019",
-            "../imagenes/HuaweiY72019.jpg",
-            "ADCO"
-        ];
-/* inserta los datos en una matriz de javascript */
-        datos[2] = [
-            "3",
-            "Huawei P30 Lite",
-            "$ 782.900",
-            "$ 782.900",
-            "N.E.",
-            "6.15",
-            "Triple cám",
-            "8MP   2MP, ",
-            "FHD (1080p)",
-            "128GB ROM",
-            "/ 4GB RAM",
-            "Li-Po 3340m",
-            "Duración e",
-            "Android 9.0   EMUI 9.0.1",
-            "http://catalogo.claro.com.co/home/EquipoDetalle/Huawei-P30-Lite-",
-            "../imagenes/HuaweiP30Lite.jpg",
-            "ADCO"
-        ];
-/* inserta los datos en una matriz de javascript */
-        datos[3] = [
-            "4",
-            "HUAWEI Y9 PRIME 2019",
-            "Precio por demanda",
-            "N.E.",
-            "N.E.",
-            "6.59",
-            "Triple 16MP",
-            "8MP   2MP F",
-            "N/A",
-            "128GB ROM",
-            "4GB RAM",
-            "Li-Po 4000m",
-            "N.E.",
-            "N.E.",
-            "http://catalogo.claro.com.co/home/EquipoDetalle/HUAWEI-Y9-PRIME-2019",
-            "../imagenes/HUAWEIY9PRIME2019.jpg",
-            ""
-        ];
-/* inserta los datos en una matriz de javascript */
-        datos[4] = [
-            "5",
-            "Motorola Moto E6 Plus",
-            "Precio por demanda",
-            "N.E.",
-            "N.E.",
-            "6.1",
-            "Dual 13 Mpx",
-            "Frontal 8 M",
-            "720 x 1560 ",
-            "N.E.",
-            "N.E.",
-            "3000 mAh",
-            "N.E.",
-            "No determinado - Octa Cor",
-            "http://catalogo.claro.com.co/home/EquipoDetalle/Motorola-Moto-E6-Plus",
-            "../imagenes/MotorolaMotoE6Plus.jpg",
-            "adco"
-        ];
-/* inserta los datos en una matriz de javascript */
-        datos[5] = [
-            "6",
-            "Motorola Moto G8 Play",
-            "Precio por demanda",
-            "N.E.",
-            "N.E.",
-            "6.3",
-            "Triple 13MP",
-            "Frontal 8MP",
-            "N.E.",
-            "ROM: 32GB",
-            "RAM: 2GB",
-            "4000 mAh",
-            "N.E.",
-            "ANDROID",
-            "http://catalogo.claro.com.co/home/EquipoDetalle/Motorola-Moto-G8-Play",
-            "../imagenes/MotorolaMotoG8Play.jpg",
-            "adco"
-        ];
-/* inserta los datos en una matriz de javascript */
-        datos[6] = [
-            "7",
-            "Samsung Galaxy A30S",
-            "Precio por demanda",
-            "N.E.",
-            "N.E.",
-            "6.4 Super AMOLED",
-            "Triple 25.0",
-            "Frontal 16.",
-            "N.E.",
-            "64GB",
-            "4GB",
-            "4000 mAh",
-            "N.E.",
-            "Android 9.0",
-            "http://catalogo.claro.com.co/home/EquipoDetalle/Samsung-Galaxy-A30S",
-            "../imagenes/SamsungGalaxyA30S.jpg",
-            "adco"
-        ];
-/* inserta los datos en una matriz de javascript */
-        datos[7] = [
-            "8",
-            "Samsung Galaxy A30 64GB",
-            "$ 527.900",
-            "N.E.",
-            "N.E.",
-            "6.4 Super AMOLED",
-            "Principal 1",
-            "Secundaria ",
-            "Reproduce V",
-            "64GB",
-            "4GB",
-            "4000 mAh",
-            "N.E.",
-            "Android 9.0",
-            "http://catalogo.claro.com.co/home/EquipoDetalle/Samsung-Galaxy-A30-64GB",
-            "../imagenes/SamsungGalaxyA30d64GB.jpg",
-            "adco"
-        ];
-/* inserta los datos en una matriz de javascript */
-        datos[8] = [
-            "9",
-            "Samsung Galaxy A30 32GB",
-            "$ 408.900",
-            "N.E.",
-            "N.E.",
-            "6.4 Super AMOLED",
-            "Principal 1",
-            "Secundaria ",
-            "FHD (1920 x",
-            "32GB",
-            "3GB",
-            "4000 mAh",
-            "N.E.",
-            "Android 9.0",
-            "http://catalogo.claro.com.co/home/EquipoDetalle/Samsung-Galaxy-A30-32GB",
-            "../imagenes/SamsungGalaxyA30d32GB.jpg",
-            "ADCO"
-        ];
+<?php
+    $i = $i+1;     
+}
+} else {
+    echo "0 results";
+}
+
+$conn->close();
+?>
 }
 datosdeentrada();
 console.log(datos);
@@ -268,7 +132,7 @@ console.log(datos);
     <div id="row2"></div>    
 </div>
 <div class="col-sm-2" style="background-color:white; min-height:700px">
-    <div class="col-sm-2">
+    <div class="col-sm-2" style="">
         <img id="img8gb" src="../imagenes/planes.png"><br>
     </div>
 </div>
@@ -391,32 +255,8 @@ function datosdesalida(){
         var tddatocelularImagen = document.createElement("td");
         var tddatocelularcasa = document.createElement("td");
 
-
         var imgcelular = document.createElement("IMG");
         var imgmodelo = document.createElement("IMG");      
-
-
-        var tablewhatsapp = document.createElement("table");
-        var trwhatsapp = document.createElement("tr");
-        var tdicono = document.createElement("td");
-        var tdboton_texto = document.createElement("td");
-
-        var imgwhatsapp = document.createElement("IMG");
-        var aboton_icono = document.createElement("a");
-
-        tablewhatsapp.className = "boton_telefono";
-        tdicono.className = "td_icono";
-        tdboton_texto.className = "boton_texto";
-        imgwhatsapp.className = "imgwhatsapp";
-        aboton_icono.className = "boton_icono";
-
-
-        tdicono.appendChild(imgwhatsapp);
-        tdboton_texto.appendChild(aboton_icono);
-        trwhatsapp.appendChild(tdicono);
-        trwhatsapp.appendChild(tdboton_texto);
-        tablewhatsapp.appendChild(trwhatsapp);
-
 
         row.className = "row";
 
@@ -548,7 +388,6 @@ function datosdesalida(){
 
         div11.appendChild(imgcelular);
         div12.appendChild(table);
-        div12.appendChild(tablewhatsapp);
         div13.appendChild(imgmodelo);
 
         row.appendChild(div10);    
@@ -594,22 +433,8 @@ function datosdesalida(){
             // imgmodelo.setAttribute("height", "228");
             imgmodelo.setAttribute("alt", "imgmodelo");
 
-            imgwhatsapp = document.getElementsByClassName("imgwhatsapp")[i];
-            imgwhatsapp.setAttribute("src", "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IURPQ1RZUEUgc3Zn%0D%0AIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFw%0D%0AaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9y%0D%0AZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZl%0D%0AcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI1MTJweCIgaGVp%0D%0AZ2h0PSI1MTJweCIgdmlld0JveD0iMCAwIDkwIDkwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6%0D%0AbmV3IDAgMCA5MCA5MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwYXRoIGlkPSJXaGF0%0D%0Ac0FwcCIgZD0iTTkwLDQzLjg0MWMwLDI0LjIxMy0xOS43NzksNDMuODQxLTQ0LjE4Miw0My44NDFj%0D%0ALTcuNzQ3LDAtMTUuMDI1LTEuOTgtMjEuMzU3LTUuNDU1TDAsOTBsNy45NzUtMjMuNTIyICAgYy00%0D%0ALjAyMy02LjYwNi02LjM0LTE0LjM1NC02LjM0LTIyLjYzN0MxLjYzNSwxOS42MjgsMjEuNDE2LDAs%0D%0ANDUuODE4LDBDNzAuMjIzLDAsOTAsMTkuNjI4LDkwLDQzLjg0MXogTTQ1LjgxOCw2Ljk4MiAgIGMt%0D%0AMjAuNDg0LDAtMzcuMTQ2LDE2LjUzNS0zNy4xNDYsMzYuODU5YzAsOC4wNjUsMi42MjksMTUuNTM0%0D%0ALDcuMDc2LDIxLjYxTDExLjEwNyw3OS4xNGwxNC4yNzUtNC41MzcgICBjNS44NjUsMy44NTEsMTIu%0D%0AODkxLDYuMDk3LDIwLjQzNyw2LjA5N2MyMC40ODEsMCwzNy4xNDYtMTYuNTMzLDM3LjE0Ni0zNi44%0D%0ANTdTNjYuMzAxLDYuOTgyLDQ1LjgxOCw2Ljk4MnogTTY4LjEyOSw1My45MzggICBjLTAuMjczLTAu%0D%0ANDQ3LTAuOTk0LTAuNzE3LTIuMDc2LTEuMjU0Yy0xLjA4NC0wLjUzNy02LjQxLTMuMTM4LTcuNC0z%0D%0ALjQ5NWMtMC45OTMtMC4zNTgtMS43MTctMC41MzgtMi40MzgsMC41MzcgICBjLTAuNzIxLDEuMDc2%0D%0ALTIuNzk3LDMuNDk1LTMuNDMsNC4yMTJjLTAuNjMyLDAuNzE5LTEuMjYzLDAuODA5LTIuMzQ3LDAu%0D%0AMjcxYy0xLjA4Mi0wLjUzNy00LjU3MS0xLjY3My04LjcwOC01LjMzMyAgIGMtMy4yMTktMi44NDgt%0D%0ANS4zOTMtNi4zNjQtNi4wMjUtNy40NDFjLTAuNjMxLTEuMDc1LTAuMDY2LTEuNjU2LDAuNDc1LTIu%0D%0AMTkxYzAuNDg4LTAuNDgyLDEuMDg0LTEuMjU1LDEuNjI1LTEuODgyICAgYzAuNTQzLTAuNjI4LDAu%0D%0ANzIzLTEuMDc1LDEuMDgyLTEuNzkzYzAuMzYzLTAuNzE3LDAuMTgyLTEuMzQ0LTAuMDktMS44ODNj%0D%0ALTAuMjctMC41MzctMi40MzgtNS44MjUtMy4zNC03Ljk3NyAgIGMtMC45MDItMi4xNS0xLjgwMy0x%0D%0ALjc5Mi0yLjQzNi0xLjc5MmMtMC42MzEsMC0xLjM1NC0wLjA5LTIuMDc2LTAuMDljLTAuNzIyLDAt%0D%0AMS44OTYsMC4yNjktMi44ODksMS4zNDQgICBjLTAuOTkyLDEuMDc2LTMuNzg5LDMuNjc2LTMuNzg5%0D%0ALDguOTYzYzAsNS4yODgsMy44NzksMTAuMzk3LDQuNDIyLDExLjExM2MwLjU0MSwwLjcxNiw3LjQ5%0D%0ALDExLjkyLDE4LjUsMTYuMjIzICAgQzU4LjIsNjUuNzcxLDU4LjIsNjQuMzM2LDYwLjE4Niw2NC4x%0D%0ANTZjMS45ODQtMC4xNzksNi40MDYtMi41OTksNy4zMTItNS4xMDdDNjguMzk4LDU2LjUzNyw2OC4z%0D%0AOTgsNTQuMzg2LDY4LjEyOSw1My45Mzh6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPC9zdmc+Cg==");
-            imgwhatsapp.setAttribute("width", "20");
-            imgwhatsapp.setAttribute("height", "20");
-            imgwhatsapp.setAttribute("alt", "imgwhatsapp");
-
             document.getElementsByClassName("div100h1")[i].innerHTML = datos[i][1];
             document.getElementsByClassName("div101h1")[i].innerHTML = datos[i][2];
-
-
-            ruta = "https://web.whatsapp.com/send?phone=573228858439&text=Hola+Oscar%2C+he+visto+el+catálogo+de+celulares+smartphone+de+Claro+y+me+interesa+el+";
-            ruta += datos[i][1];
-            document.getElementsByClassName("boton_icono")[i].href = ruta;
-            document.getElementsByClassName("boton_icono")[i].innerText = 'Whatsapp';
-            document.getElementsByClassName("boton_icono")[i].target = '_blanck';
-
         }
     }
 
